@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Login</title>
+  <style>
+
+body { padding-top:30px; 
+background-color:lightgrey;}
+.form-group{margin-bottom:50px;}
+
+input.ng-invalid {
+    background-color:pink;
+}
+input.ng-valid {
+    background-color:lightgreen;
+}
+
+</style>
+<script>
+
+	var validationApp = angular.module('validationApp', []);
+
+	
+	validationApp.controller('mainController', function($scope) {
+
+					
+		$scope.submitForm = function() {
+
+			
+			if ($scope.userForm.$valid) {
+				alert('Thank You for your Submission');
+			}
+
+		};
+
+	});
+
+</script>
+</head>
+<body>
+<div ng-app="validationApp" ng-controller="mainController">
+<div class="container">
+<div class="row">  
+   <h1 class="text-center">LOG IN</h1>
+<div class="col-md-offset-2 col-md-8 col-md-offset-2">
+   
+  
+    <form name="userForm" ng-submit="submitForm()" novalidate>
+
+        
+        <!-- EMAIL -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+            <label class="col-md-2 control-label text-right">E-Mail</label>  
+    <div class="col-md-10 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+            <input type="email" name="email" class="form-control" ng-model="user.email">
+			</div>
+            <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" >Enter a valid email.</p>
+        </div>
+       
+		</div>
+		<br>
+		<br>
+		<br>
+		
+         <!-- PASSWORD -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.password.$invalid && !userForm.password.$pristine }">
+            <label class="col-md-2 control-label text-right" >Password</label> 
+    <div class="col-md-10 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-send"></i></span>
+            <input type="password" name="password" class="form-control" ng-model="user.password" ng-minlength="6" ng-maxlength="8">
+			</div>
+            <p ng-show="userForm.password.$error.minlength" >Password is too short.</p>
+            <p ng-show="userForm.password.$error.maxlength">Password is too long.</p>
+        
+        </div>
+		</div>
+		<br>
+<div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember" ng-model="myVar"> Remember me</label>
+<h1 ng-show="myVar">User credentials are saved</h1>  
+  </div>
+      </div>
+    </div>		
+    
+  
+  
+
+		<div class="row text-center">
+        <button type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid">Submit</button>
+        </div>
+		
+   
+
+
+    </form>
+  </div>
+    </div>
+    
+</div>
+</div>
+</div>
+</body>
+
+</html>

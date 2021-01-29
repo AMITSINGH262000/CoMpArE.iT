@@ -1,0 +1,259 @@
+#header
+    {   
+        background-color:black;
+        margin:0;
+        color:white;
+        height:100px;
+        width: 100%;
+    }
+
+h1
+    {
+        margin: 0;
+        color: white;
+        padding-top: 25px;
+        padding-left: 20px;
+        font-family: serif;
+    }
+
+.heading
+    {
+        font-family: AR JULIAN;
+        font-size: 200%;
+        padding-top: 7%;
+    }
+
+#footer 
+    {
+        color:white;
+        background-color:black;
+        height:180px;
+    }
+
+#h01
+    {
+        float:left;
+        padding:18px;
+    }
+
+ul
+    {
+        float:right;
+        padding-right: 80px;
+        padding-top: 10px;
+    }
+
+li
+    {
+        float: right;
+        padding-right: 20px;
+    }
+
+body
+    {
+        margin:0;
+        background-color: #dfe6e9;
+    }
+
+#p01
+    {
+        padding-top: 110px;
+        padding-left: 18px;
+        font-size: 20px;
+    }
+
+#p02
+    {
+        padding-left: 5%;
+        font-size: 470%;
+        font-family: AR JULIAN;
+        text-align: center;
+    }
+
+#p03
+    {
+        padding-left: 5%;
+        font-size: 470%;
+        font-family: AR JULIAN;
+        text-align: center;
+    }
+
+#p04
+    {
+        padding-left: 5%;
+        font-size: 470%;
+        font-family: AR JULIAN;
+        text-align: center;
+    }
+
+#p05
+    {
+        padding-left: 5%;
+        font-size: 470%;
+        font-family: AR JULIAN;
+        text-align: center;
+    }
+		
+#img01
+    {
+        height: 50px;
+        width: 100px;
+    }
+
+#img02
+    {
+        height: 250px;
+        width: 60%;
+        padding-left: 18%;
+        margin-top: 10%;
+    }
+
+#img03
+    {
+        height: 250px;
+        width: 80%;
+        padding-left: 8%;
+         margin-top: 10%;
+    }
+
+#img04
+    {
+        height: 250px;
+        width: 100%;
+         margin-top: 10%;
+    }
+
+#img05
+    {
+        height: 250px;
+        width: 80%;
+        padding-left: 11%;
+         margin-top: 10%;
+    }
+
+#img06
+    {
+        height: 10%;
+        width: 3%;
+    }
+
+.mobile_logo
+    {
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        margin-right: 20px;
+        
+    }
+
+.laptop_logo
+    {
+        height: 100%;
+        width: 70%;
+        padding-left: 13%;
+    }
+
+.speaker_logo
+    {
+        height: 100%;
+        width: 70%;
+        padding-left: 15%;
+    }
+
+.tv_logo
+    {
+        height: 100%;
+        width: 70%;
+        padding-left: 13%;
+    }
+
+#img39
+    {
+        height: 9%;
+        width: 6%;
+        float: right;
+        margin-right: 2%;
+    }
+
+.card
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: all 1.5s ease;
+        box-shadow: 0 8px 16px 0 black;
+    }
+
+.card:hover
+    {
+        box-shadow: 0 8px 16px 0 black;
+        transform: rotateY(180deg);
+    }
+
+.main
+    {
+        position: relative;
+        width: 22%;
+        height: 320px;
+        display: inline-block;
+        margin-left: 2%;
+    }
+
+.front
+    {
+        position: absolute;
+        widows: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background: #dfe6e9;
+       
+    }
+
+.back
+    {
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        text-align: center;
+        font-size: 25px;
+        text-decoration: bolder;
+        background: url("../Resources/Images/5.jpg");
+    }
+
+a
+{
+text-decoration: none;
+    color:black;
+    font-size: 40px;
+}
+.card_edge
+    {
+        box-shadow: 8px 4px 8px 4px rgba(0,0,0,0.2);
+        width: 19%;
+        display: inline-block;
+        margin-left: 3%;
+        height: 150px;
+    }
+
+.card_edge:hover
+    {
+         box-shadow: 0 8px 16px 0 black;
+    }
+
+.card_logo
+    {
+        box-shadow: 8px 4px 8px 4px rgba(0,0,0,0.2);
+        width: 20%;
+        
+        display: inline-block;
+        padding-left: 50px;
+        margin-left: 1%;
+        height: 150px;
+    }
+
+.card_logo:hover
+    {
+         box-shadow: 0 8px 16px 0 black;
+    }
